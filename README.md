@@ -1,4 +1,4 @@
-# Airbnb analysis capstone
+# Airbnb analysis 
 
 A complete, reproducible analysis project for the supplied Airbnb listings-and-reviews JSON. It provides optional MongoDB Atlas ingestion, deterministic cleaning, exploratory analysis, an interactive Streamlit application, and Power BI/Tableau-ready exports.
 
