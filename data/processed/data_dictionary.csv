@@ -1,0 +1,62 @@
+table,column,type,description
+listings,listing_id,string,Stable source listing identifier
+listings,name,string,Listing title
+listings,listing_url,string,Source listing URL
+listings,host_id,string,Stable source host identifier
+listings,host_name,string,Host display name
+listings,host_is_superhost,boolean,Source superhost flag
+listings,host_identity_verified,boolean,Source identity-verification flag
+listings,country,string,Country name from address
+listings,country_code,string,Country code from address
+listings,market,string,Airbnb market from address
+listings,government_area,string,Administrative/neighborhood area from address
+listings,suburb,string,Suburb from address
+listings,longitude,number,GeoJSON longitude; first coordinate
+listings,latitude,number,GeoJSON latitude; second coordinate
+listings,coordinate_valid,boolean,Coordinate pair has numeric values in world bounds
+listings,coordinate_issue,string,Reason a coordinate pair is invalid
+listings,location_exact,boolean,Source location-exactness flag
+listings,property_type,string,Source property type
+listings,room_type,string,Source room type
+listings,bed_type,string,Source bed type
+listings,accommodates,number,Maximum guest count
+listings,bedrooms,number,Bedroom count; missing remains null
+listings,bathrooms,number,Bathroom count; missing remains null
+listings,beds,number,Bed count; missing remains null
+listings,minimum_nights,number,Minimum-night rule
+listings,maximum_nights,number,Maximum-night rule
+listings,price,number,Nightly source value; currency is not supplied
+listings,price_unit,string,Always 'source price units'
+listings,currency_verified,boolean,False because the source has no currency field
+listings,cleaning_fee,number,Source cleaning fee; missing remains null
+listings,security_deposit,number,Source security deposit; missing remains null
+listings,extra_people,number,Source extra-person amount
+listings,guests_included,number,Guests included in the source price
+listings,price_missing,boolean,Price is absent or unparsable
+listings,price_non_positive,boolean,Price is zero or negative
+listings,price_extreme,boolean,Positive price outside its market 3-IQR outer fences
+listings,price_outlier_lower,number,Market-specific lower outer fence
+listings,price_outlier_upper,number,Market-specific upper outer fence
+listings,review_score_rating,number,Overall review score on the source 0-100 scale
+listings,number_of_reviews,number,Source review count
+listings,availability_30,number,Snapshot of available days in next 30 days
+listings,availability_60,number,Snapshot of available days in next 60 days
+listings,availability_90,number,Snapshot of available days in next 90 days
+listings,availability_365,number,Snapshot of available days in next 365 days
+listings,availability_valid,boolean,All supplied horizon values are in valid bounds
+listings,first_review,date,Source first-review timestamp
+listings,last_review,date,Source last-review timestamp
+listings,last_scraped,date,Source scrape timestamp
+listings,calendar_last_scraped,date,Source calendar scrape timestamp
+listings,amenities_count,number,Count of source amenities
+listings,amenities,string,Pipe-delimited source amenities for BI filtering
+listings,source_file,string,Input file name for provenance
+listings,source_row,number,Zero-based position in the source array
+review_events,review_id,string,Stable source review identifier
+review_events,listing_id,string,Listing foreign key
+review_events,review_date,date,Parsed review date
+review_events,review_year_month,string,Calendar month for review-activity proxy charts
+review_events,market,string,"Listing market, denormalized for BI filters"
+review_events,government_area,string,"Listing area, denormalized for BI filters"
+review_events,country,string,"Listing country, denormalized for BI filters"
+review_events,source_listing_row,number,Zero-based listing position in source array

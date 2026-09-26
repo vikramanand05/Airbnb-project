@@ -1,0 +1,5 @@
+horizon_days,listing_count,median_available_days,q1_available_days,q3_available_days
+30,5555,8.0,0.0,24.0
+60,5555,23.0,0.0,52.0
+90,5555,43.0,0.0,80.0
+365,5555,171.0,17.0,317.0

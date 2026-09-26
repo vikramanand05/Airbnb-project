@@ -1,0 +1,16 @@
+market,listing_count,median_price,price_q1,price_q3,extreme_price_count
+Barcelona,632,60.0,35.0,100.0,32
+Hong Kong,619,550.0,353.0,848.0,17
+Istanbul,660,179.0,105.0,301.0,27
+Kauai,67,239.0,139.0,400.0,0
+Maui,153,228.0,174.0,320.0,6
+Montreal,648,75.0,48.0,110.0,21
+New York,607,110.0,72.0,160.0,15
+Oahu,253,142.0,97.0,265.0,7
+Other (Domestic),1,128.0,128.0,128.0,0
+Other (International),4,446.5,318.75,573.5,0
+Porto,554,59.0,41.0,80.0,17
+Rio De Janeiro,603,257.0,149.0,522.0,40
+Sydney,609,132.0,80.0,218.0,27
+The Big Island,139,120.0,84.0,177.0,6
+Unknown,6,120.5,47.75,143.0,0

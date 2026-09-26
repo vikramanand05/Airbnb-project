@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airbnb-analysis-capstone"
+version = "1.0.0"
+description = "Reproducible MongoDB, EDA, Streamlit, geospatial, and BI-ready Airbnb analysis"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "numpy==2.2.4",
+  "pandas==2.2.3",
+  "plotly==6.0.1",
+  "pyarrow==19.0.1",
+  "pymongo==4.12.0",
+  "python-dotenv==1.1.0",
+  "streamlit==1.44.1",
+  "tenacity==9.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "ruff==0.11.4",
+]
+
+[project.scripts]
+airbnb-analysis = "airbnb_analysis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "integration: exercises the generated data or Streamlit app",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+

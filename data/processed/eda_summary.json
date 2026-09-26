@@ -1,0 +1,13 @@
+{
+  "country_count": 9,
+  "data_freshness": "2019-03-11 04:00:00",
+  "listing_count": 5555,
+  "market_count": 14,
+  "median_rating": 95.0,
+  "price_unit": "source price units",
+  "rating_sample_size": 4081,
+  "review_date_max": "2019-03-11 04:00:00",
+  "review_date_min": "2009-10-27 04:00:00",
+  "review_event_count": 149792,
+  "valid_coordinate_count": 5555
+}
